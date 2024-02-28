@@ -1,0 +1,20 @@
+https://imgur.com/dSwDsun
+
+- I add one more server, and one Load balancer to distributes traffic volumes to each servers
+
+- The most used algorithm with HAProxy, which selects servers in a rotating manner, according to their weight.
+
+- An active-active load balancer distributes traffic across multiple servers simultaneously, while an active-passive load balancer designates one server as primary, with others as backups, routing traffic only to the primary unless it fails.
+So ours is a active-active
+
+- In a Primary-Replica (Master-Slave) database cluster, the primary node handles read and write operations, replicating data changes to replica nodes asynchronously or synchronously, ensuring redundancy, scalability, and fault tolerance.
+
+- The primary node in a Primary-Replica (Master-Slave) database cluster typically handles read and write operations, serving as the authoritative source for data modifications. The replica nodes, on the other hand, primarily serve read-only operations, providing redundancy, scalability, and potentially improved performance for read-heavy workloads.
+
+- If one server (and its contents) goes down, the other takes over. Heavy traffic is also regulated (but not infinitely).
+Now, if the server that contains the Load balancer crashes, the system is in danger.
+
+- The data transmitted over the network isn't encrypted using an SSL certificate. Anyone can intercept and read them.
+There is no way of blocking unauthorized IPs since there's no firewall installed on any server.
+
+- We have no way of knowing the status of each server since they're not being monitored.
