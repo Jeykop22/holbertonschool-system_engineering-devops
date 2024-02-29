@@ -1,0 +1,7 @@
+https://imgur.com/5bI59m3
+
+
+- For every additional element, why you are adding it
+
+1 server: allows you to keep a backup server and switch to active - passive mode while keeping the robinround algo
+1 load-balancer (HAproxy) configured as cluster with the other one: allows you to switch to active - passive mode on the load balancer and ensure service in the event of one of the two stopping. Eliminate a SPOF.
