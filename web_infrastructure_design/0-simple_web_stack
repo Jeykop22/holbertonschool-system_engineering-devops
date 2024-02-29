@@ -1,7 +1,7 @@
-https://imgur.com/xX4LB1j
+https://imgur.com/mV2cUQb
 
 - What is a server?
-A server is a computer hardware or software that provides services to other computers (the clients).
+A server is a computer hardware or software that provides services to other computers (the clients). And is generally stock in a data center. Often located in an off-site data center or cloud environment, virtualizing servers involves converting one physical server into multiple virtual machines. A server operating system (server OS) runs on a server in a client-server architecture
 
 - What is the role of the domain name?
 Domaine name is a human word or sentence alias for remember an ip adress. In this example, the domain name www.foobar.com is easier to recognize and remember than 8.8.8.8. This traduction are mapped in the Domain Name System (DNS)
